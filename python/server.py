@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 url = os.getenv('FORM_URL')
  
-expiration_timestamp = time.time() + 300
+expiration_timestamp = time.time() + 4200
 scanned_ips = set()
 def qrcode_generator():
     ngrok.set_auth_token(f"{os.getenv('NGROK_AUTH_TOKEN')}")  # Replace with your actual ngrok auth token
